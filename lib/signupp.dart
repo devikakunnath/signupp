@@ -17,16 +17,13 @@ class signupp extends StatelessWidget {
           ),
           child: Column(
             children: [
-              SizedBox(height: 80),
               Text(
                 "SIGN UP",
-                style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
               ),
 
               SizedBox(height: 30),
               Text(
                 "create an account it's free",
-                style: TextStyle(fontSize: 17, color: Colors.grey),
               ),
               SizedBox(height: 40),
                Padding(
