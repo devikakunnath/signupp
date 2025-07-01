@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'login.dart';
+
 class signupp extends StatelessWidget {
   const signupp({super.key});
 
@@ -113,9 +115,13 @@ class signupp extends StatelessWidget {
                   ),
                 ),
               ),SizedBox(height: 50),
-              Text(
-                "already have an account ? LOGIN",
-                style: TextStyle(fontSize: 17, color: Colors.grey),
+              Row(
+                children: [
+                  Text(
+                    "already have an account ? ",
+                    style: TextStyle(fontSize: 17, color: Colors.grey),
+                  ),TextButton(onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => login(),));}, child: Text("LOGIN"))
+                ],
               )
             ],
           ),
