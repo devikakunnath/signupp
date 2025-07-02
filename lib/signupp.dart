@@ -115,14 +115,14 @@ class signupp extends StatelessWidget {
                   ),
                 ),
               ),SizedBox(height: 50),
-              Row(
-                children: [
+
+
                   Text(
                     "already have an account ? ",
                     style: TextStyle(fontSize: 17, color: Colors.grey),
                   ),TextButton(onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => login(),));}, child: Text("LOGIN"))
-                ],
-              )
+                ,
+
             ],
           ),
         ),
