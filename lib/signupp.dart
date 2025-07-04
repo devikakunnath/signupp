@@ -2,9 +2,18 @@ import 'package:flutter/material.dart';
 
 import 'login.dart';
 
-class signupp extends StatelessWidget {
+class signupp extends StatefulWidget {
   const signupp({super.key});
 
+  @override
+  State<signupp> createState() => _signuppState();
+}
+
+class _signuppState extends State<signupp> {
+  TextEditingController usernamecontroller=TextEditingController();
+  TextEditingController emailcontroller=TextEditingController();
+  TextEditingController passwordcontroller=TextEditingController();
+  TextEditingController confirmcontroller=TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -33,7 +42,7 @@ class signupp extends StatelessWidget {
               SizedBox(height: 40),
                Padding(
                  padding: const EdgeInsets.fromLTRB(0, 0,350, 0),
-                 child: Text("Username",style: TextStyle(fontSize: 12, color: Colors.black,)),
+                 child: Text("username",style: TextStyle(fontSize: 12, color: Colors.black,)),
                ),
               SizedBox(
                 width: 400,
@@ -50,7 +59,7 @@ class signupp extends StatelessWidget {
                 ),
               ),Padding(
                 padding: const EdgeInsets.fromLTRB(0, 0,360, 0),
-                child: Text("Email",style: TextStyle(fontSize: 12, color: Colors.black,)),
+                child: Text("email",style: TextStyle(fontSize: 12, color: Colors.black,)),
               ),
               SizedBox(
                 width: 400,
@@ -67,7 +76,7 @@ class signupp extends StatelessWidget {
                 ),
               ),Padding(
                 padding: const EdgeInsets.fromLTRB(0, 0,340, 0),
-                child: Text("Password",style: TextStyle(fontSize: 12, color: Colors.black,)),
+                child: Text("password",style: TextStyle(fontSize: 12, color: Colors.black,)),
               ),
               SizedBox(
                 width: 400,
@@ -84,7 +93,7 @@ class signupp extends StatelessWidget {
                 ),
               ),Padding(
                 padding: const EdgeInsets.fromLTRB(0, 0,300, 0),
-                child: Text("Confirm Password",style: TextStyle(fontSize: 12, color: Colors.black,)),
+                child: Text("confirm password",style: TextStyle(fontSize: 12, color: Colors.black,)),
               ),
               SizedBox(
                 width: 400,
