@@ -38,7 +38,9 @@ class _forgotState extends State<forgot> {
           ),SizedBox(
             width: 400,
             height: 50,
-            child: TextField(controller: emailcontroller,
+            child: TextFormField(
+
+              controller: emailcontroller,
 
               decoration: InputDecoration(
                 filled: true,

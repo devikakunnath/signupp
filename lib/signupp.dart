@@ -52,7 +52,7 @@ class _signuppState extends State<signupp> {
               SizedBox(
                 width: 400,
                 height: 50,
-                child: TextField(
+                child: TextFormField(
                   controller: usernamecontroller,
                   decoration: InputDecoration(
                     filled: true,
@@ -73,7 +73,7 @@ class _signuppState extends State<signupp> {
               SizedBox(
                 width: 400,
                 height: 50,
-                child: TextField(
+                child: TextFormField(
                   controller: emailcontroller,
                   decoration: InputDecoration(
                     filled: true,
@@ -94,7 +94,7 @@ class _signuppState extends State<signupp> {
               SizedBox(
                 width: 400,
                 height: 50,
-                child: TextField(
+                child: TextFormField(
                   controller: passwordcontroller,
                   decoration: InputDecoration(
                     filled: true,
@@ -115,7 +115,7 @@ class _signuppState extends State<signupp> {
               SizedBox(
                 width: 400,
                 height: 50,
-                child: TextField(
+                child: TextFormField(
                   controller: confirmcontroller,
                   decoration: InputDecoration(
                     filled: true,

@@ -46,7 +46,7 @@ class _loginState extends State<login> {
               SizedBox(
                 width: 400,
                 height: 50,
-                child: TextField(
+                child: TextFormField(
                   controller: emailController,
                   decoration: InputDecoration(
                     filled: true,
@@ -68,7 +68,7 @@ class _loginState extends State<login> {
               SizedBox(
                 width: 400,
                 height: 50,
-                child: TextField(
+                child: TextFormField(
                   controller: passwordController,
                   decoration: InputDecoration(
                     filled: true,
