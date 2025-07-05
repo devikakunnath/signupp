@@ -18,15 +18,20 @@ class welcome extends StatelessWidget {
             borderRadius: BorderRadius.circular(15),
           ),
           child: Column(
-            children: [
+            children: [SizedBox(height: 60),
               SizedBox(
                 height: 100,
                 child: Text(
                   "WELCOME",
-                  style: TextStyle(fontSize: 50, fontWeight: FontWeight.bold),
+                  style: TextStyle(fontSize: 50, fontWeight: FontWeight.bold,color: Colors.black, // required for ShaderMask
+                    shadows: [
+                    Shadow(
+                    blurRadius: 4,
+                    color: Colors.grey,
+                    offset: Offset(5, 5),)]
                 ),
-              ),
-              SizedBox(height: 150),
+              )),
+              SizedBox(height: 80),
 
               Container(
                 height: 354,

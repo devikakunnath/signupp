@@ -5,6 +5,8 @@ import 'package:signup/login.dart';
 import 'package:signup/signupp.dart';
 import 'package:signup/welcome.dart';
 
+import 'forgot.dart';
+
 void main() async { await Firebase.initializeApp(
   options: DefaultFirebaseOptions.currentPlatform,
 );
